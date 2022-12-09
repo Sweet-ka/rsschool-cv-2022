@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="icon" href="./img/icons8-github-octocat-50.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,200;0,400;0,600;1,200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="main">
+    <div class="myself">
+      <div class="background"></div>
+      <header class="my_name">
+        <h1>Sviatlana Shaliankova</h1>
+        <span>Novice Front-End Developer</span>
+        <div class="about_me_text">
+          <ul>
+            <li class="square">
+              <p>
+                I quickly learn new areas of activity, master new skills. I am
+                considering a career change towards front-end development.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="about_me">
+        <div class="background_mobile"></div>
+        <div class="education">
+          <h2>Education</h2>
+          <ul>
+            <li class="square">
+              <p>
+                1999 - 2004<br>
+                Belarusian National Technical University (BNTU)<br>
+                Traffic management and logistics
+              </p>
+            </li>
+            <li class="square">
+              <p>
+                2021<br>
+                RS School<br>
+                JavaScript/Front-end
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="projects">
+          <h2>Educational projects</h2>
+          <ul>
+            <li class="square">
+              <a class="work" href="https://rolling-scopes-school.github.io/sweet-ka-JSFE2021Q1/virtual-piano">Virtual
+                Piano</a>
+            </li>
+            <li>
+              <a class="work" href="https://rolling-scopes-school.github.io/sweet-ka-JSFE2021Q1/photo-filter">Photo
+                Filter</a>
+            </li>
+            <li>
+              <a class="work" href="https://rolling-scopes-school.github.io/sweet-ka-JSFE2021Q1/online-zoo">Online
+                Zoo</a>
+            </li>
+            <li>
+              <a class="work" href="https://rolling-scopes-school.github.io/sweet-ka-JSFE2021Q1/async-race">Async
+                Race</a>
+            </li>
+            <li>
+              <a class="work" href="https://rolling-scopes-school.github.io/sweet-ka-JSFE2021Q1/match-match-game">Match
+                Match Game</a>
+            </li>
+            <li>
+              <a class="work"
+                href="https://rolling-scopes-school.github.io/sweet-ka-JSFE2021Q1/codejam-chess/#lobby">Codejam
+                Chess</a>
+            </li>
+          </ul>
+        </div>
+        <div class="experience">
+          <h2>Work Experience</h2>
+          <ul>
+            <li class="square">
+              <p>
+                2005 - 2013<br>
+                State Enterprise "Minsktrans"<br>
+                Transport management engineer
+              </p>
+            </li>
+            <li class="square">
+              <p>
+                2014 - to the present<br>
+                VMG "Industry"<br>
+                Accounting specialist
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="code">
+          <h2>Сode example</h2>
+          <pre>
+              <code>
+                // Given an n x n array, return the array elements
+                // arranged from outermost elements
+                // to the middle element, traveling clockwise.
+
+                snail = function(array) {
+                  let snailBody = [];
+
+                    if (array[0].length == 0 || array.length == 0){
+                      return snailBody;
+                    }
+
+                  let maxI = array.length - 1;
+                  let maxJ = array.length - 1;
+                  let minI = 0;
+                  let minJ = 0;
+
+                  while (minI &lt;= maxI && minJ &lt;= maxJ) {
+                    for (let j = minJ; j &lt;= maxJ; j++) {
+                      snailBody.push(array[minI][j])
+                    }
+                    minI++;
+
+                    for (let i = minI; i &lt;= maxI; i++) {
+                      snailBody.push(array[i][maxJ]);
+                    }
+                    maxJ--;
+
+                    for (let j = maxJ; j >= minJ; j--) {
+                      snailBody.push(array[maxI][j]);
+                    }
+                    maxI--;
+
+                    for (let i = maxI; i >= minI; i--) {
+                      snailBody.push(array[i][minJ]);
+                    }
+                    minJ++;
+                  }
+                  return snailBody;
+                }
+                </code>
+            </pre>
+        </div>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="./img/me.jpg" alt="my photo">
+    </div>
+    <div class="contacts">
+      <div class="info">
+        <div class="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li class="info_li">
+              <div class="skill_name">
+                <p>JavaScript</p>
+              </div>
+              <progress value="60" max="100"></progress>
+            </li>
+            <li class="info_li">
+              <div class="skill_name">
+                <p>Html/CSS</p>
+              </div>
+              <progress value="50" max="100"></progress>
+            </li>
+            <li class="info_li">
+              <div class="skill_name">
+                <p>GIT</p>
+              </div>
+              <progress value="30" max="100"></progress>
+            </li>
+          </ul>
+        </div>
+        <div class="language">
+          <h2>Language</h2>
+          <ul>
+            <li class="info_li">
+              <div class="skill_name">
+                <p>Russian</p>
+              </div>
+              <progress value="90" max="100"></progress>
+            </li>
+            <li class="info_li">
+              <div class="skill_name">
+                <p>Belorussian</p>
+              </div>
+              <progress value="75" max="100"></progress>
+            </li>
+            <li class="info_li">
+              <div class="skill_name">
+                <p>English <span class="english">(A1)</span></p>
+              </div>
+              <progress value="2" max="6"></progress>
+            </li>
+          </ul>
+        </div>
+        <nav class="contact_me">
+          <h2>My Contacts</h2>
+          <ul>
+            <li>
+              <a href="tel:+375296498954">
+                <div class="icon">
+                  <div class="icon_back phone"></div>
+                </div>
+                <p>+375 (29) 649 89 54</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/SviatlanaS">
+                <div class="icon">
+                  <div class="icon_back telegram"></div>
+                </div>
+                <p>@SviatlanaS</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://discord.com/users/547997518760509450">
+                <div class="icon">
+                  <div class="icon_back discord"></div>
+                </div>
+                <p>Sweet-ka#5165</p>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:sweet-ka@mail.ru">
+                <div class="icon">
+                  <div class="icon_back mail"></div>
+                </div>
+                <p>sweet-ka@mail.ru</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://goo.gl/maps/Egutysndm29GHABi9">
+                <div class="icon">
+                  <div class="icon_back adress"></div>
+                </div>
+                <p>Mogilev, Belarus</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <footer>
+      <h2>Hobbies</h2>
+      <ul class="hobby_icons">
+        <li class="icon">
+          <div class="icon_back gim"></div>
+        </li>
+        <li class="icon">
+          <div class="icon_back dance"></div>
+        </li>
+        <li class="icon">
+          <div class="icon_back music"></div>
+        </li>
+        <li class="icon">
+          <div class="icon_back book"></div>
+        </li>
+      </ul>
+      <div class="ps">
+        <a class="icon ps_git" href="https://github.com/Sweet-ka">
+          <div class="icon_back github"></div>
+        </a>
+        <span class="year">2022</span>
+        <a class="rsjs" href="https://rs.school/js/#basic-knowledge">
+          <div class="icon_back rss"></div>
+        </a>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
