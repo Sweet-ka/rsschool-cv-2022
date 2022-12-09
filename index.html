@@ -110,28 +110,35 @@
                 // Given an n x n array, return the array elements
                 // arranged from outermost elements
                 // to the middle element, traveling clockwise.
+
                 snail = function(array) {
                   let snailBody = [];
+
                     if (array[0].length == 0 || array.length == 0){
                       return snailBody;
                     }
+
                   let maxI = array.length - 1;
                   let maxJ = array.length - 1;
                   let minI = 0;
                   let minJ = 0;
+
                   while (minI &lt;= maxI && minJ &lt;= maxJ) {
                     for (let j = minJ; j &lt;= maxJ; j++) {
                       snailBody.push(array[minI][j])
                     }
                     minI++;
+
                     for (let i = minI; i &lt;= maxI; i++) {
                       snailBody.push(array[i][maxJ]);
                     }
                     maxJ--;
+
                     for (let j = maxJ; j >= minJ; j--) {
                       snailBody.push(array[maxI][j]);
                     }
                     maxI--;
+
                     for (let i = maxI; i >= minI; i--) {
                       snailBody.push(array[i][minJ]);
                     }
