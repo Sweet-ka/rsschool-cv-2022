@@ -116,12 +116,23 @@ p {
 }
 
 .projects ul {
-  padding-left: 0.5em;
+  padding-left: 0.3em;
 }
 
 .projects li {
   margin: 0 0.3em 0 0;
   padding-left: 0.5em;
+}
+
+.square {
+  position: relative;
+}
+
+.square::before {
+  content: '';
+  border: solid 5px #282a30;
+  position: absolute;
+  left: 4px;
 }
 
 .about_me p {
