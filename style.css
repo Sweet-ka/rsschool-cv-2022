@@ -85,29 +85,23 @@ ul {
 
 li {
   list-style-type: none;
-  padding-left: 0.5em;
+  padding-left: 8px;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 1.2em;
 }
 
-.marker {
-  width: 4px;
-  height: 4px;
-  border: solid 5px #282a30;
-}
-
 p {
-  margin: 0 0 0 -5px;
+  margin: 0;
   border-left: solid 1px #282a30;
-  padding-left: 0.5em;
+  padding-left: 8px;
 }
 
 .work {
   border-left: solid 1px #282a30;
   margin-top: o;
   margin-bottom: 0;
-  padding-left: 0.5em;
+  padding-left: 8px;
   font-weight: 700;
 }
 
@@ -115,13 +109,8 @@ p {
   margin-left: calc(0.5em - 5px);
 }
 
-.projects ul {
-  padding-left: 0.3em;
-}
-
 .projects li {
   margin: 0 0.3em 0 0;
-  padding-left: 0.5em;
 }
 
 .square {
@@ -130,9 +119,9 @@ p {
 
 .square::before {
   content: '';
-  border: solid 5px #282a30;
+  border: solid 4px #282a30;
   position: absolute;
-  left: 4px;
+  left: 4.5px;
 }
 
 .about_me p {
