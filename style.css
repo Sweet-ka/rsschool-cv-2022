@@ -4,6 +4,10 @@
   color: #282a30;
 }
 
+body {
+  margin: 0;
+}
+
 h1 {
   font-size: 7em;
   letter-spacing: -0.1em;
@@ -409,6 +413,8 @@ footer * {
 
   .main {
     grid-template-columns: 100%;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .photo,
